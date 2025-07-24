@@ -28,7 +28,7 @@ Sell the held item for the specified price.
 ### /money <get|set> <player> <amount: set>
 #### /money get <player>
 Get the amount of money the specified player has.
-### /money set <player> <amount> [OP ONLY]
+#### /money set <player> <amount> [OP ONLY]
 Set the amount of monet the specified player has.
 
 ### /pay <player> <amount>
