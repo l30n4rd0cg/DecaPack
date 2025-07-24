@@ -1,0 +1,97 @@
+[
+	{
+		"id": "money",
+		"literals": [
+			{
+				"id": "get",
+				"arguments": [
+					{
+						"id": "player",
+						"type": "minecraft:entity players",
+						"executes": [
+							"function decapack:money/get_money {player: \"${player}\"}"
+						]
+					}
+				]
+			},
+			{
+				"id": "set",
+				"arguments": [
+					{
+						"id": "player",
+						"type": "minecraft:entity players",
+						"arguments": [
+							{
+								"id": "amount",
+								"type": "brigadier:integer 0",
+								"executes": [
+									"function decapack:money/set_money {player: \"${player}\", amount: ${amount}}"
+								]
+							}
+						],
+						"executes": []
+					}
+				]
+			}
+		],
+		"arguments": [],
+		"require": {
+			"type": "operator",
+			"operator": 3
+		},
+		"executes": []
+	},
+	{
+		"id": "pay",
+		"literals": [],
+		"arguments": [
+			{
+				"id": "player",
+				"type": "minecraft:entity players",
+				"arguments": [
+					{
+						"id": "amount",
+						"type": "brigadier:integer 1",
+						"executes": [
+							"function decapack:money/pay {player: \"${player}\", amount: ${amount}}"
+						]
+					}
+				],
+				"executes": []
+			}
+		],
+		"executes": []
+	},
+	{
+		"id": "shop",
+		"literals": [],
+		"arguments": [],
+		"executes": [
+			"scoreboard players reset @s shop_page",
+			"scoreboard players set @s shop_page 0",
+			"function decapack:shop/spawn_shop"
+		]
+	},
+	{
+		"id": "forceshop",
+		"literals": [],
+		"arguments": [],
+		"executes": [
+			"function decapack:shop/spawn_shop_not_secure"
+		]
+	},
+	{
+		"id": "sell",
+		"literals": [],
+		"arguments": [
+			{
+					"id": "price",
+					"type": "brigadier:integer 1",
+					"executes": [
+						"function decapack:shop/sell_item {price: ${price}}"
+					]
+			}
+		],
+		"executes": []
+	}
+]
