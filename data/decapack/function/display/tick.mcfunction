@@ -1,0 +1,1 @@
+execute as @a run function decapack:display/tick_player_wrapper with entity @s
