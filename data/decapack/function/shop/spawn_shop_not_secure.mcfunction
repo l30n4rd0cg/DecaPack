@@ -9,11 +9,6 @@ execute store result storage decapack:tmp_args Index int 27 run scoreboard playe
 
 data remove block ~1 ~2 ~ Items
 
-#tellraw @s ["[shop/spawn_shop] StartSlot = ", {storage: "decapack:tmp_args", nbt: StartSlot}]
-#tellraw @s ["[shop/spawn_shop] Index = ", {storage: "decapack:tmp_args", nbt: Index}]
-#tellraw @s ["[shop/spawn_shop] shop_page = ", {score: {name: "@s", objective: "shop_page"}}]
-
-#function decapack:shop/fill_items {StartSlot: 0b, Index: 0}
 function decapack:shop/fill_items with storage decapack:tmp_args
 
 function decapack:shop/spawn_shop_menu
