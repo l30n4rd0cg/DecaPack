@@ -93,5 +93,26 @@
 			}
 		],
 		"executes": []
+	},
+	{
+		"id": "decapack",
+		"literals": [
+			{
+				"id": "version",
+				"arguments": [],
+				"executes": [
+					"function decapack:commands/version"
+				]
+			},
+			{
+				"id": "help",
+				"arguments": [],
+				"executes": [
+					"function decapack:commands/help"
+				]
+			}
+		],
+		"arguments": [],
+		"executes": []
 	}
 ]
