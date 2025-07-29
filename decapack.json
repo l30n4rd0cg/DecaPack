@@ -103,13 +103,6 @@
 				"executes": [
 					"function decapack:commands/version"
 				]
-			},
-			{
-				"id": "help",
-				"arguments": [],
-				"executes": [
-					"function decapack:commands/help"
-				]
 			}
 		],
 		"arguments": [],
