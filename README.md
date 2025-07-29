@@ -22,3 +22,6 @@ Datapack de Minecraft hecho para el Decacraft SMP.
 ## Comandos
 
 Ver [commands.md](docs/commands.md).
+
+## Estándares
+Ver [standards.md](docs/standards.md)

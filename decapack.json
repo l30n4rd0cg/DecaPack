@@ -103,7 +103,24 @@
 				"executes": [
 					"function decapack:commands/version"
 				]
-			}
+			},
+            {
+                "id": "upgrade",
+                "arguments": [
+                    {
+                        "id": "version",
+                        "type": "brigadier:integer 1",
+                        "executes": [
+                            "function decapack:upgrade/${version}"
+                        ]
+                    }
+                ],
+                "require": {
+                    "type": "operator",
+                    "operator": 3
+                },
+                "executes": []
+            }
 		],
 		"arguments": [],
 		"executes": []
