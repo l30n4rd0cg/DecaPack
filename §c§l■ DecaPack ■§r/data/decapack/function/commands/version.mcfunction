@@ -1,0 +1,1 @@
+tellraw @s [{"text": "Decapack v. ", "color": "gold"}, {storage: "decapack:version", nbt: version, color: "green"}, {text: "[STD ", color: "gold"}, {storage: "decapack:version", nbt: "api_version", color: "green"}, {text: "] por ", "color": "gold"}, {storage: "decapack:version", nbt: "author", color: "green"}]
