@@ -1,0 +1,11 @@
+data modify block ~ ~2 ~ Items append value {id: "barrier", Slot: 18b, count: 1, components: {item_name: "Cerrar", repair_cost: 999999, lore: [{"text": "ADVERTENCIA: ", bold: true, color: "red", italic: false}, {text: "¡Al pulsar aquí no dejes ningún item en la tienda o puede que lo pierdas!", color: "red", italic: false}]}}
+data modify block ~ ~2 ~ Items append value {id: "player_head", Slot: 8b, count: 1, components: {item_name: "Siguiente", repair_cost: 999999, profile: {properties: [{name: "textures", value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQxZmY2YmM2N2E0ODEyMzJkMmU2NjllNDNjNGYwODdmOWQyMzA2NjY1YjRmODI5ZmI4Njg5MmQxM2I3MGNhIn19fQ=="}]}, custom_data: {command: "function decapack:shop/next_page", has_command: 1b}}}
+data modify block ~ ~2 ~ Items append value {id: "player_head", Slot: 0b, count: 1, components: {item_name: "Anterior", repair_cost: 999999, profile: {properties: [{name: "textures", value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDliMmJlZTM5YjZlZjQ3ZTE4MmQ2ZjFkY2E5ZGVhODQyZmNkNjhiZGE5YmFjYzZhNmQ2NmE4ZGNkZjNlYyJ9fX0="}]}, custom_data: {command: "function decapack:shop/previous_page", has_command: 1b}}}
+data modify block ~ ~2 ~ Items append value {id: "paper", Slot: 4b, count: 1, components: {item_name: "Página text.page_number", repair_cost: 999999}}
+data merge storage decapack:tmp_args {string1: "Página ", string2: "text.page_number"}
+execute store result score @s tmp1 run scoreboard players get @s shop_page
+scoreboard players add @s tmp1 1
+execute store result storage decapack:tmp_args string2 int 1 run scoreboard players get @s tmp1
+function decapack:misc/append_string with storage decapack:tmp_args
+data modify block ~ ~2 ~ Items[{Slot: 4b}].components."minecraft:item_name" set from storage decapack:tmp_args return
+data modify block ~ ~2 ~ Items append value {id: "anvil", Slot: 19b, count: 1, components: {item_name: "Recargar", repair_cost: 999999, lore: [{"text": "ADVERTENCIA: ", bold: true, color: "red", italic: false}, {text: "¡Al pulsar aquí no dejes ningún item en la tienda o lo perderás!", color: "red", italic: false}], custom_data: {command: "function decapack:shop/spawn_shop_not_secure", has_command: 1b}}}

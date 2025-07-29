@@ -1,0 +1,4 @@
+$execute store success score @a tmp2 run data modify storage decapack:tmp_args2 vendor set from entity @a[nbt={UUID: [I; $(0), $(1), $(2), $(3)]}, limit=1] SelectedItem.components."minecraft:profile".name
+$item replace entity @a[nbt={UUID: [I; $(0), $(1), $(2), $(3)]}, limit=1] hotbar.$(SelectedItemSlot) with air
+$playsound block.note_block.pling ui @a[nbt={UUID: [I; $(0), $(1), $(2), $(3)]}, limit=1] ~ ~ ~ 1 2 1
+$tellraw @a[nbt={UUID: [I; $(0), $(1), $(2), $(3)]}, limit=1] [{text: "¡Has puesto en venta el ítem por ", color: "green"}, {storage: "decapack:tmp_args2", nbt: "price", color: "gold"}, {text: "Ð", color: gold}, {text: "!", color: "green"}]
