@@ -2,9 +2,9 @@
 #   player[player]
 #   amount[int>0]
 
-$scoreboard players set @s tmp1 $(amount)
+$scoreboard players set decapack tmp1 $(amount)
 
-execute if score @s money < @s tmp1 run return run tellraw @s {text: "¡No tienes suficiente dinero!", color: "red"}
+execute if score @s money < decapack tmp1 run return run tellraw @s {text: "¡No tienes suficiente dinero!", color: "red"}
 
 $execute unless entity $(player) run return run tellraw @s {text: "El jugador '$(player)' no existe.", color: "red"}
 

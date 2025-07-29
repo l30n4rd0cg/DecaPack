@@ -67,8 +67,8 @@
 		"literals": [],
 		"arguments": [],
 		"executes": [
-			"scoreboard players reset @s shop_page",
-			"scoreboard players set @s shop_page 0",
+			"scoreboard players reset @s decapack.shop_page",
+			"scoreboard players set @s decapack.shop_page 0",
 			"function decapack:shop/spawn_shop"
 		]
 	},

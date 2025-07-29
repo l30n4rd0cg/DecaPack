@@ -6,6 +6,6 @@ execute if items block ~1 ~2 ~ container.* *[!repair_cost=999999] run return run
 
 fill ~ ~2 ~ ~1 ~2 ~ air
 
-scoreboard players reset @s in_shop
+scoreboard players reset @s decapack.in_shop
 
 attribute @s jump_strength base reset
