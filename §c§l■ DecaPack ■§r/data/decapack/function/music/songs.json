@@ -1,0 +1,19 @@
+{
+    "songs": [
+        {
+            "id": "rick-roll",
+            "name": "Never Gonna Give You Up",
+            "author": "Rick Astley"
+        },
+        {
+            "id": "thomas-the-train",
+            "name": "Thomas el tren",
+            "author": "Mike O'Donnell"
+        },
+        {
+            "id": "viva-la-vida",
+            "name": "Viva la Vida",
+            "author": "Coldplay"
+        }
+    ]
+}

@@ -120,7 +120,77 @@
                     "operator": 3
                 },
                 "executes": []
-            }
+            },
+			{
+				"id": "music",
+				"literals": [
+					{
+						"id": "on",
+						"arguments": [],
+						"executes": [
+							"tag @s add notty"
+						]
+					},
+					{
+						"id": "off",
+						"arguments": [],
+						"executes": [
+							"tag @s remove notty"
+						]
+					},
+					{
+						"id": "particles",
+						"literals": [
+							{
+								"id": "on",
+								"arguments": [],
+								"executes": [
+									"scoreboard players set music.particles decapack.settings 1"
+								]
+							},
+							{
+								"id": "off",
+								"arguments": [],
+								"executes": [
+									"scoreboard players set music.particles decapack.settings 0"
+								]
+							},
+							{
+								"id": "spam",
+								"arguments": [],
+								"executes": [
+									"scoreboard players set music.particles decapack.settings 2"
+								]
+							}
+						],
+						"arguments": [],
+						"executes": []
+					}
+				],
+				"arguments": [],
+				"executes": []
+			},
+			{
+				"id": "display",
+				"literals": [
+					{
+						"id": "on",
+						"arguments": [],
+						"executes": [
+							"tag @s add decacraft_display"
+						]
+					},
+					{
+						"id": "off",
+						"arguments": [],
+						"executes": [
+							"tag @s remove decacraft_display"
+						]
+					}
+				],
+				"arguments": [],
+				"executes": []
+			}
 		],
 		"arguments": [],
 		"executes": []
