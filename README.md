@@ -1,5 +1,6 @@
 # DecaPack
 Datapack de Minecraft hecho para el Decacraft SMP.
+**Nota**: Este datapack depende de [`notty`](https://modrinth.com/datapack/notty). Si sigues las instrucciones de instalación, vendrá incluido.
 
 ## Instalación
 
