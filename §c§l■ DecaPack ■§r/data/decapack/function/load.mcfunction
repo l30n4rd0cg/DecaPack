@@ -4,7 +4,7 @@ scoreboard objectives add decapack.shop_page dummy
 scoreboard objectives add tmp1 dummy
 scoreboard objectives add tmp2 dummy
 
-data modify storage decapack:version version set value "1.0.1"
+data modify storage decapack:version version set value "1.0.2f"
 data modify storage decapack:version author set value "LeonardoClGo"
 data modify storage decapack:version api_version set value 2
 # Esto me lo generó Copilot xd
