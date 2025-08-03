@@ -43,4 +43,4 @@ execute store result storage decapack:tmp_args StartSlot byte 1.0 run scoreboard
 
 execute if score decapack tmp1 matches 27 run return 1
 
-function decapack:shop/fill_items with storage decapack:tmp_args
+function decapack:shop/gui/fill_items with storage decapack:tmp_args

@@ -6,4 +6,4 @@ $item replace entity @s hotbar.$(SelectedItemSlot) with player_head[profile={ id
 
 $data merge storage decapack:tmp_args2 {SelectedItemSlot: $(SelectedItemSlot)}
 
-schedule function decapack:shop/sell_item_continue 2
+schedule function decapack:shop/items/sell_item/sell_item_continue 2

@@ -9,8 +9,8 @@ execute store result storage decapack:tmp_args Index int 27 run scoreboard playe
 
 data remove block ~1 ~2 ~ Items
 
-function decapack:shop/fill_items with storage decapack:tmp_args
+function decapack:shop/gui/fill_items with storage decapack:tmp_args
 
-function decapack:shop/spawn_shop_menu
+function decapack:shop/gui/spawn_shop/spawn_shop_menu
 
 scoreboard players set @s decapack.in_shop 1

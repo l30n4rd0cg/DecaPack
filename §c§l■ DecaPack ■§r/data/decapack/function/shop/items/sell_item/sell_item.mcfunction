@@ -15,4 +15,4 @@ data modify storage decapack:tmp_args2 3 set from entity @s UUID[3]
 
 data modify storage decapack:tmp_args2 SelectedItemSlot set from entity @s SelectedItemSlot
 
-function decapack:shop/sell_item_helper with storage decapack:tmp_args2
+function decapack:shop/items/sell_item/sell_item_helper with storage decapack:tmp_args2

@@ -1,6 +1,6 @@
 {
     "values": [
         "decapack:display/tick",
-        "decapack:shop/tick"
+        "decapack:shop/gui/tick"
     ]
 }

@@ -9,6 +9,7 @@
 # minecraft.garabanamas.es              6   1
 
 
+#$scoreboard objectives remove decacraft_uuid_$(0)_$(1)_$(2)_$(3)
 $scoreboard objectives add decacraft_uuid_$(0)_$(1)_$(2)_$(3) dummy {text: "Decacraft", color: "green", bold: true}
 $execute as @s run scoreboard objectives setdisplay sidebar decacraft_uuid_$(0)_$(1)_$(2)_$(3)
 $scoreboard objectives modify decacraft_uuid_$(0)_$(1)_$(2)_$(3) numberformat blank
@@ -21,7 +22,7 @@ $scoreboard players set @e[tag=decacraft_scoreboard_5] decacraft_uuid_$(0)_$(1)_
 $scoreboard players set @e[tag=decacraft_scoreboard_6] decacraft_uuid_$(0)_$(1)_$(2)_$(3) 1
 
 $scoreboard players display name @e[tag=decacraft_scoreboard_1] decacraft_uuid_$(0)_$(1)_$(2)_$(3) [{text: ""}]
-$scoreboard players display name @e[tag=decacraft_scoreboard_2] decacraft_uuid_$(0)_$(1)_$(2)_$(3) [{text: "Nombre: ", color: "gold", bold: true}, {selector: "@a[nbt={uuid=[I; $(0), $(1), $(2), $(3)]}]", color: "green", bold: false}]
+$scoreboard players display name @e[tag=decacraft_scoreboard_2] decacraft_uuid_$(0)_$(1)_$(2)_$(3) [{text: "Nombre: ", color: "gold", bold: true}, {selector: "@a[nbt={UUID: [I; $(0), $(1), $(2), $(3)]}]", color: "green", bold: false}]
 $scoreboard players display name @e[tag=decacraft_scoreboard_3] decacraft_uuid_$(0)_$(1)_$(2)_$(3) [{text: ""}]
 $scoreboard players display name @e[tag=decacraft_scoreboard_4] decacraft_uuid_$(0)_$(1)_$(2)_$(3) [{text: "Dinero: ", color: "gold", bold: true}, {score: {name: "@s", objective: "money"}, color: "green", bold: false}, {text: "Ð", color: "green", bold: false}]
 $scoreboard players display name @e[tag=decacraft_scoreboard_5] decacraft_uuid_$(0)_$(1)_$(2)_$(3) [{text: ""}]

@@ -69,7 +69,7 @@
 		"executes": [
 			"scoreboard players reset @s decapack.shop_page",
 			"scoreboard players set @s decapack.shop_page 0",
-			"function decapack:shop/spawn_shop"
+			"function decapack:shop/gui/spawn_shop/spawn_shop"
 		]
 	},
 	{
@@ -77,7 +77,7 @@
 		"literals": [],
 		"arguments": [],
 		"executes": [
-			"function decapack:shop/spawn_shop_not_secure"
+			"function decapack:shop/gui/spawn_shop/spawn_shop_not_secure"
 		]
 	},
 	{
@@ -88,7 +88,7 @@
 					"id": "price",
 					"type": "brigadier:integer 1",
 					"executes": [
-						"function decapack:shop/sell_item {price: ${price}}"
+						"function decapack:shop/items/sell_item/sell_item {price: ${price}}"
 					]
 			}
 		],

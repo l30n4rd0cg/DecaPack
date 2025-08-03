@@ -5,4 +5,4 @@ data merge storage decapack:tmp_args {storage_name: "decapack:shop", storage_pat
 execute store success score decapack tmp1 run function decapack:misc/get_from_index with storage decapack:tmp_args
 execute if score decapack tmp1 matches 0 run return run scoreboard players remove @s decapack.shop_page 1
 
-function decapack:shop/spawn_shop
+function decapack:shop/gui/spawn_shop/spawn_shop
