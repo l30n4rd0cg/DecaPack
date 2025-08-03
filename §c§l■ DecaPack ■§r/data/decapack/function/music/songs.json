@@ -14,6 +14,11 @@
             "id": "viva-la-vida",
             "name": "Viva la Vida",
             "author": "Coldplay"
+        },
+        {
+            "id": "kirby-gourmet-race",
+            "name": "Kirby: Gourmet Race",
+            "author": "Jun Ishikawa"
         }
     ]
 }
