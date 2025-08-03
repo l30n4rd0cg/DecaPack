@@ -28,5 +28,5 @@ Opciones:
 - `on`: Enciende las partículas a un intervalo regular.
 - `off`: Apaga completamente las partículas.
 - `spam`: Spamea las partículas constantemente.
-### /decapack display <on|off>
+### /decapack display <on|off> [SOLO OP]
 Alterna el display/scoreboard del lado de la pantalla.

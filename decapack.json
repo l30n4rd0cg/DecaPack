@@ -178,14 +178,23 @@
 						"arguments": [],
 						"executes": [
 							"tag @s add decacraft_display"
-						]
+						],
+						"require": {
+							"type": "operator",
+							"operator": 3
+						}
 					},
 					{
 						"id": "off",
 						"arguments": [],
 						"executes": [
-							"tag @s remove decacraft_display"
-						]
+							"tag @s remove decacraft_display",
+							"scoreboard objectives setdisplay sidebar"
+						],
+						"require": {
+							"type": "operator",
+							"operator": 3
+						}
 					}
 				],
 				"arguments": [],
