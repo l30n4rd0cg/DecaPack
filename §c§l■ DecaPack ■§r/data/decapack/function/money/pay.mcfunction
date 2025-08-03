@@ -12,4 +12,4 @@ $tellraw @s [{text: "Has pagado $(amount)Ð a ", color: "gold"}, {selector: "@s"
 $tellraw $(player) [{text: "¡", color: "gold"}, {selector: "@s", color: "green"}, {text: " te ha pagado $(amount)Ð!", color: "gold"}]
 
 $scoreboard players add $(player) money $(amount)
-$scoreboard players remove @s money $(amount)
+$execute as $(player) run scoreboard players remove @s money $(amount)
