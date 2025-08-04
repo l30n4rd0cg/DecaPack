@@ -165,25 +165,6 @@
 						],
 						"arguments": [],
 						"executes": []
-					},
-					{
-						"id": "show_progress",
-						"literals": [
-							{
-								"id": "on",
-								"arguments": [],
-								"executes": [
-									"tag @s add decacraft_music_progress"
-								]
-							},
-							{
-								"id": "off",
-								"arguments": [],
-								"executes": [
-									"tag @s remove decacraft_music_progress"
-								]
-							}
-						]
 					}
 				],
 				"arguments": [],
