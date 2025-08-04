@@ -5,6 +5,10 @@ scoreboard objectives add tmp1 dummy
 scoreboard objectives add tmp2 dummy
 scoreboard objectives add decapack.settings dummy
 
+bossbar remove decapack:music_progress
+bossbar add decapack:music_progress {text: "Progreso de la música", color: "white"}
+bossbar set decapack:music_progress color white
+
 data modify storage decapack:version version set value "2.0.1"
 data modify storage decapack:version author set value "LeonardoClGo"
 data modify storage decapack:version api_version set value 2
